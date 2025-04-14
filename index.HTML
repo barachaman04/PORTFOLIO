@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Barach Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      color: #222;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #7b2cbf;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .email {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      display: inline-block;
+      margin: 15px 0;
+      font-weight: 600;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    nav a {
+      background: #3f37c9;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #560bad;
+    }
+    section {
+      margin: 40px 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #3a0ca3;
+    }
+    .card, .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .skills-grid, .projects-grid, .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color: #560bad;
+    }
+    .project-card p {
+      margin: 10px 0;
+    }
+    .button {
+      display: inline-block;
+      background: #ff006e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .experience, .certificates {
+      background: linear-gradient(135deg, #f9c5d1, #9795ef);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer a {
+      color: #560bad;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Aman Barach</h1>
+      <p>Creative Technologist | Data & Design<br>B.Tech (ECE)</p>
+      <div class="email">barachaman.04@gmail.com</div>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Hi! I’m a final-year engineering student who blends technology with creativity. I’m passionate about building meaningful dashboards, crafting sleek systems, and delivering results through smart design and data. Looking for opportunities where I can contribute both technically and creatively.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>Python, SQL, HTML, CSS</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Power BI, Excel, Tableau, GitHub</p>
+        </div>
+        <div class="skill-card">
+          <h3>Creative</h3>
+          <p>UI/UX Design, Dashboard Design, Visual Storytelling</p>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <p>Analytical Thinking, Collaboration, Time Management</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card project-card">
+          <h3>Ecommerce Sales Dashboard</h3>
+          <p>Built in Excel with HTML, CSS. Analyzed sales data with slicers and visuals.</p>
+          <a class="button" href="https://github.com/yourusername/ecommerce-dashboard" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="card project-card">
+          <h3>Madhav Store BI Dashboard</h3>
+          <p>Power BI dashboard for a retail store using advanced DAX.</p>
+          <a class="button" href="https://github.com/yourusername/madhav-store-dashboard" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="card project-card">
+          <h3>Pharmacy Management System</h3>
+          <p>Python-based inventory system for pharmacies, reducing manual errors.</p>
+          <a class="button" href="https://github.com/yourusername/pharmacy-management-system" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h3>Bausch + Lomb | IT Intern (Aug – Sep 2023)</h3>
+        <p>Enhanced Oracle order to cash process by antivirus deployment, improving efficiency and security.</p>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="certs-grid">
+        <div class="card">Deloitte – Data Analytics (Forage)</div>
+        <div class="card">Bausch + Lomb Internship</div>
+        <div class="card">MERN Stack Training</div>
+        <div class="card">GitHub Fundamentals</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed by Aman Barach | Connect on <a href="https://www.linkedin.com/in/aman-barach-7b1030255/" target="_blank">LinkedIn</a></p>
+    </footer>
+  </div>
+</body>
+</html>
